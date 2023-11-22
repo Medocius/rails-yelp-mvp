@@ -1,0 +1,5 @@
+<%= simple_form_for(reviews) do |f| %>
+  <%= f.input :rating %>
+  <%= f.input :content, collection: ["chinese", "italian", "japanese", "french", "belgian"] %>
+  <%= f.submit %>
+<% end %>
